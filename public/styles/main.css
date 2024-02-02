@@ -1,0 +1,148 @@
+body {
+    background: #222;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+      helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    color: yellow;
+  }
+  
+  main {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-style: hidden hidden solid hidden;
+    margin-top: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  
+  .title {
+    position: absolute;
+    top: 40px;
+    left: 170px;
+    right: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  
+  input {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    font-size: 0.9rem;
+    background: #888;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    margin: 50px;
+  }
+
+  textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    font-size: 0.9rem;
+    background: #888;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    margin: 50px;
+    display: inline;
+  }
+
+.container-f {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .container-f > input {
+    flex-basis: 350px;
+    padding-left: 50px;
+  }
+  
+  
+  
+  #blogs {
+    position: absolute;
+    top: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 100px 100px;
+    gap: 30px;
+  }
+
+
+  section p {
+    align-items: center;
+    text-align: justify;
+    color: beige;
+  }
+
+  section h1 {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .container-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container-btns input{
+    -webkit-appearance: none;
+    border: 0;
+    font-size: 1rem;
+    background: #888;
+    color: white;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 15px;
+  }
+  .container-post {
+    border-style: solid hidden solid hidden;
+  }
+
+  .container-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding-bottom: 30px;
+  }
+
+.sub-btn input{
+  margin-left: 40px;
+}

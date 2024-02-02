@@ -1,0 +1,86 @@
+<%- include("./partials/header.ejs") %>
+
+
+
+    <h2>Create a blog post:</h2>
+    <form action="/submit" method="POST">
+        <div class="container-f">
+            <label for="title">Post Title:</label>
+            <input type="text" cols="40" name="title">
+        </div>
+        <div class="container-f">
+            <label for="post">Blog Post:</label>
+            <textarea type="textarea" value="Blog post" rows="10" cols="40" name="post">
+            </textarea>
+        </div>
+        <hr />
+        <div class="sub-btn">
+            <input type="submit" value="Create blog post">
+        </div>
+    </form>
+
+
+
+</main>
+
+
+<section id = "blogs">
+
+    <h1>All Your Blog Posts:</h1>
+    <div class = "container-btns"> 
+        <div class = "container-form">
+            <form action="/edit" method="POST">
+                <label for="postNumber">Choose the number of the post you want to edit:</label>
+                <input type="text" name="postNumber">
+                <input type="submit" value="Edit">
+            </form> 
+        </div>
+        <div class = "container-form">
+            <form action="/delete" method="POST">
+                <label for="postNumber">Choose the number of the post you want to delete:</label>
+                <input type="text" name="postNumber">
+                <input type="submit" value="Delete">
+            </form> 
+        </div>
+    </div>
+    <% var i;
+    var num = 1;
+    for( i = 0; i < count; i++ ) { %>
+
+        <% if(locals.edit[i] != 0) { %>
+
+            <h2>Edit the blog post:</h2>
+            <form action="/patch" method="POST">
+                <div class="container-f">
+                    <label for="title">Post Title:</label>
+                    <input type="text" cols="50" name="title" value="<%= titles[i] %>">
+                </div>
+                <div class="container-f">
+                    <label for="post">Blog Post:</label>
+                    <textarea type="textarea" value="Blog post" rows="10" cols="50" name="post" >
+                        <%= posts[i] %>
+                    </textarea>
+                </div>
+                <hr />
+                <div class="sub-btn">
+                    <input type="submit" value="Save blog post">
+                </div>
+            </form> 
+
+        <% }
+        else { 
+            if(titles[i] != 0) { %>
+                <div class = "container-post">
+                    <div class = "container-btn"> 
+                        <h3> <%= num %>. <%= titles[i] %> </h3>
+                    </div> 
+                    <p><%= posts[i] %> </p>
+                </div>
+        <%      num++;
+            }
+    } %>
+
+    <% } %>
+
+
+<%- include("./partials/footer.ejs") %>
