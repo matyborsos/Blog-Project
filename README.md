@@ -32,16 +32,16 @@ It includs at least one CSS file for the styling of the website
 
 
 ### Photo previews:
-Home Page:
+#### Home Page:
 <img width="1507" alt="Screenshot 2024-01-18 at 16 03 17" src="https://github.com/matyborsos/Blog-Project/assets/122999210/f50bb02e-dd29-4749-917b-7e4693d89ddb">
 
-Post creation feature:
+#### Post creation feature:
 <img width="1503" alt="Screenshot 2024-01-18 at 16 04 07" src="https://github.com/matyborsos/Blog-Project/assets/122999210/fe2eefd7-bfce-427c-8559-7ab6de9fb9bf">
 
-Post viewing feature:
+#### Post viewing feature:
 <img width="1497" alt="Screenshot 2024-01-18 at 16 04 20" src="https://github.com/matyborsos/Blog-Project/assets/122999210/626903a2-382c-4c2d-baf6-8ed4c83928b0">
 
-Updating post feature:
-<img width="1497" alt="Screenshot 2024-01-18 at 16 04 20" src="https://github.com/matyborsos/Blog-Project/assets/122999210/44dae62c-95f1-4fde-ae09-7e08280bcb41">
+#### Updating post feature:
+<img width="1505" alt="Screenshot 2024-01-18 at 16 04 36" src="https://github.com/matyborsos/Blog-Project/assets/122999210/5f8c7e22-2f27-4a95-8b28-259cdfdee01a">
 
 
