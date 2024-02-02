@@ -45,3 +45,8 @@ It includs at least one CSS file for the styling of the website
 <img width="1505" alt="Screenshot 2024-01-18 at 16 04 36" src="https://github.com/matyborsos/Blog-Project/assets/122999210/5f8c7e22-2f27-4a95-8b28-259cdfdee01a">
 
 
+##### To start it use:
+1. npm install
+2. nodemon index.js
+3. the port is 3000, so use localhost:3000 to see the project locally.
+
